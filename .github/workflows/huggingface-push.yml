@@ -1,0 +1,22 @@
+name: Sync with Hugging Face Hub
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-to-hf-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Add remote 
+        env:
+          HF: ${{ secrets.HF_TOKEN }}
+        run: git remote add space https://noahgift:$HF@huggingface.co/spaces/plzdontcry/dakubettergpt
+      - name: Push to hub
+        env:
+          HF: ${{ secrets.HF_TOKEN }}
+        run: git push --force https://noahgift:$HF@huggingface.co/spaces/plzdontcry/dakubettergpt main

@@ -1,3 +1,12 @@
+---
+title: DakuBetterGPT
+emoji: 🔮
+colorFrom: purple
+colorTo: indigo
+sdk: docker
+app_port: 3000
+---
+
 <h1 align="center"><b>Better ChatGPT</b></h1>
 
 <p align="center">
