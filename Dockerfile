@@ -1,5 +1,3 @@
-ARG VITE_OPENAI_API_KEY
-
 FROM node:alpine
 
 RUN addgroup -S appgroup && \

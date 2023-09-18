@@ -2,6 +2,7 @@ import React from 'react';
 import useStore from '@store/store';
 
 import Me from './Me';
+import Api from './Api';
 import ImportExportChat from '@components/ImportExportChat';
 import SettingsMenu from '@components/SettingsMenu';
 import CollapseOptions from './CollapseOptions';
@@ -23,6 +24,7 @@ const MenuOptions = () => {
         {countTotalTokens && <TotalTokenCostDisplay />}
         <ImportExportChat />
         <SettingsMenu />
+        <Api />
         <Me />
       </div>
     </>
