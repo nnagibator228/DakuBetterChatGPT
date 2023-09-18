@@ -18,77 +18,124 @@ Carefully heed the user's instructions.
 Respond using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
-  'gpt-3.5-turbo',
-  'gpt-3.5-turbo-16k',
-  'gpt-4',
   'gpt-4-32k',
-  // 'gpt-3.5-turbo-0301',
-  // 'gpt-4-0314',
-  // 'gpt-4-32k-0314',
+  'gpt-4-0613',
+  'gpt-4-0314',
+  'gpt-4',
+  'gpt-3.5-turbo-16k-0613',
+  'gpt-3.5-turbo-16k',
+  'gpt-3.5-turbo-0613',
+  'gpt-3.5-turbo',
+  'codellama-7b',
+  'codellama-34b',
+  'codellama-13b',
+  'claude-instant',
+  'claude-2-100k',
+  'claude-2',
+  'oasst-llama-2-70b',
+  'oasst-llama-2-30b',
+  'oasst-llama-2-13b',
+  'ext-davinci-003'
 ];
 
 export const defaultModel = 'gpt-3.5-turbo';
 
 export const modelMaxToken = {
-  'gpt-3.5-turbo': 4096,
-  'gpt-3.5-turbo-0301': 4096,
-  'gpt-3.5-turbo-0613': 4096,
-  'gpt-3.5-turbo-16k': 16384,
-  'gpt-3.5-turbo-16k-0613': 16384,
-  'gpt-4': 8192,
-  'gpt-4-0314': 8192,
-  'gpt-4-0613': 8192,
-  'gpt-4-32k': 32768,
-  'gpt-4-32k-0314': 32768,
-  'gpt-4-32k-0613': 32768,
+  'gpt-4-32k': 32000,
+  'gpt-4-0613': 6130,
+  'gpt-4-0314': 3140,
+  'gpt-4': 32768,
+  'gpt-3.5-turbo-16k-0613': 16130,
+  'gpt-3.5-turbo-16k': 16000,
+  'gpt-3.5-turbo-0613': 1130,
+  'gpt-3.5-turbo': 32768,
+  'codellama-7b': 7000,
+  'codellama-34b': 34000,
+  'codellama-13b': 13000,
+  'claude-instant': 32768,
+  'claude-2-100k': 100000,
+  'claude-2': 32768,
+  'oasst-llama-2-70b': 70000,
+  'oasst-llama-2-30b': 30000,
+  'oasst-llama-2-13b': 13000,
+  'ext-davinci-003': 32768
 };
 
 export const modelCost = {
-  'gpt-3.5-turbo': {
-    prompt: { price: 0.0015, unit: 1000 },
-    completion: { price: 0.002, unit: 1000 },
-  },
-  'gpt-3.5-turbo-0301': {
-    prompt: { price: 0.0015, unit: 1000 },
-    completion: { price: 0.002, unit: 1000 },
-  },
-  'gpt-3.5-turbo-0613': {
-    prompt: { price: 0.0015, unit: 1000 },
-    completion: { price: 0.002, unit: 1000 },
-  },
-  'gpt-3.5-turbo-16k': {
-    prompt: { price: 0.003, unit: 1000 },
-    completion: { price: 0.004, unit: 1000 },
-  },
-  'gpt-3.5-turbo-16k-0613': {
-    prompt: { price: 0.003, unit: 1000 },
-    completion: { price: 0.004, unit: 1000 },
-  },
-  'gpt-4': {
-    prompt: { price: 0.03, unit: 1000 },
-    completion: { price: 0.06, unit: 1000 },
-  },
-  'gpt-4-0314': {
-    prompt: { price: 0.03, unit: 1000 },
-    completion: { price: 0.06, unit: 1000 },
-  },
-  'gpt-4-0613': {
-    prompt: { price: 0.03, unit: 1000 },
-    completion: { price: 0.06, unit: 1000 },
-  },
   'gpt-4-32k': {
     prompt: { price: 0.06, unit: 1000 },
-    completion: { price: 0.12, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
   },
-  'gpt-4-32k-0314': {
+  'gpt-4-0613': {
     prompt: { price: 0.06, unit: 1000 },
-    completion: { price: 0.12, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
   },
-  'gpt-4-32k-0613': {
+  'gpt-4-0314': {
     prompt: { price: 0.06, unit: 1000 },
-    completion: { price: 0.12, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
   },
+  'gpt-4': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'gpt-3.5-turbo-16k-0613': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'gpt-3.5-turbo-16k': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'gpt-3.5-turbo-0613': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'gpt-3.5-turbo': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'codellama-7b': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'codellama-34b': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'codellama-13b': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'claude-instant': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'claude-2-100k': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'claude-2': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'oasst-llama-2-70b': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'oasst-llama-2-30b': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'oasst-llama-2-13b': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  },
+  'ext-davinci-003': {
+    prompt: { price: 0.06, unit: 1000 },
+    completion: { price: 0.12, unit: 1000 }
+  }
 };
+
 
 export const defaultUserMaxToken = 4000;
 

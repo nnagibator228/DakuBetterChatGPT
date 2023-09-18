@@ -74,7 +74,7 @@
     @apply w-4;
     @apply h-4;
     @apply rounded-full;
-    background: rgba(16, 163, 127);
+    background: rgb(25, 111, 191);
   }
 
   ::-webkit-scrollbar {

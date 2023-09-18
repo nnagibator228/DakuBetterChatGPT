@@ -49,10 +49,25 @@ export interface Folder {
   color?: string;
 }
 
-export type ModelOptions = 'gpt-4' | 'gpt-4-32k' | 'gpt-3.5-turbo' | 'gpt-3.5-turbo-16k' ;
-// | 'gpt-3.5-turbo-0301';
-// | 'gpt-4-0314'
-// | 'gpt-4-32k-0314'
+export type ModelOptions = 'gpt-4' | 'gpt-4-32k' | 'gpt-3.5-turbo' | 'gpt-3.5-turbo-16k'
+| 'gpt-4-32k'
+| 'gpt-4-0613'
+| 'gpt-4-0314'
+| 'gpt-4'
+| 'gpt-3.5-turbo-16k-0613'
+| 'gpt-3.5-turbo-16k'
+| 'gpt-3.5-turbo-0613'
+| 'gpt-3.5-turbo'
+| 'codellama-7b'
+| 'codellama-34b'
+| 'codellama-13b'
+| 'claude-instant'
+| 'claude-2-100k'
+| 'claude-2'
+| 'oasst-llama-2-70b'
+| 'oasst-llama-2-30b'
+| 'oasst-llama-2-13b'
+| 'ext-davinci-003'
 
 export type TotalTokenUsed = {
   [model in ModelOptions]?: {

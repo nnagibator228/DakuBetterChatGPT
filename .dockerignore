@@ -1,2 +1,4 @@
 /.github
 /Dockerfile
+/docker-compose
+/prompt-library
