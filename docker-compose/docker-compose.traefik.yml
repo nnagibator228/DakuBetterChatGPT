@@ -33,9 +33,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
   dakubettercgatgpt:
-    image: tdakubettercgatgpt/dakubettercgatgpt:latest
-    container_name: dakubettercgatgpt
-    hostname: dakubettercgatgpt
+    image: plzdontcry/dakubettergpt:latest
+    container_name: dakubettergpt
+    hostname: dakubettergpt
     build:
       context: ../
       dockerfile: Dockerfile
