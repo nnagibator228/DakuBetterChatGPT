@@ -11,9 +11,8 @@ RUN yarn config set prefix ~/.yarn && \
 
 WORKDIR /home/appuser/app
 COPY --chown=appuser:appgroup package.json yarn.lock ./
-RUN yarn install
 COPY --chown=appuser:appgroup . .
-RUN yarn build
+RUN yarn install && yarn build
 
 EXPOSE 3000
 CMD ["/home/appuser/.yarn/bin/serve", "-s", "dist", "-l", "3000"]
