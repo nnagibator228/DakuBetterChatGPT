@@ -11,7 +11,7 @@ RUN yarn config set prefix ~/.yarn && \
 
 WORKDIR /home/appuser/app
 COPY --chown=appuser:appgroup package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install
 COPY --chown=appuser:appgroup . .
 RUN yarn build
 
